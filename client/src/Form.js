@@ -4,21 +4,25 @@ import axios from 'axios';
 const Form = () => {
   const [text, setText] = useState('');
   const [img, setImg] = useState('');
+  // const [question, setQuestion] = useState({
+  //   text: '',
+  //   img: '',
+  //   answers: []
+  // });
+  const [temp, setTemp] = useState('');
 
   const handleSubmit = e => {
     e.preventDefault();
-    //NO ANDA
-    const question = { text: text};
-    const image = { img: img };
+    //SI ANDA
+    const question = { text: text,
+    img: img
+    };
     axios.post('/question/preguntas', question)
       .then(res => {
         console.log(res.question);
-        setText('');
-      });
-
-    axios.post('/question/preguntas', image)
-      .then(res => {
         console.log(res.image);
+        //setQuestion('');
+        setText('');
         setImg('');
       });
   };
