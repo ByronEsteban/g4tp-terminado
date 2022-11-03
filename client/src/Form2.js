@@ -4,52 +4,52 @@ import { useState } from 'react';
 const Form2 = props => {
 
   const [answerData, setAnswerData] = useState({
-    text1: '',
-    correct1: Boolean
-  }, {
-    text2: '',
-    correct2: Boolean
-  }, {
-    text3: '',
-    correct3: Boolean
-  }, {
-    text4: '',
-    correct4: Boolean
+    answer1: {text: '', correct: false},
+    answer2: {text: '', correct: false},
+    answer3: {text: 'pINGUINO RA', correct: false},
+    answer4: {text: '', correct: false}
   });
 
   const [formData, setFormData] = useState({
     text: '',
     answers: [answerData]
   });
-  const [temp, setTemp] = useState('');
+  const [temp5, setTemp5] = useState({
+    text: '', text1: '', text2: '', text3: '', text4: ''
+  });
 
   const handleSubmit = e => {
     e.preventDefault();
     console.log('Sending data to server...', formData);
   };
 
-  const handleRadio = e => {
-    console.log(e.target.previousSibling.name);
-    const name = e.target.previousSibling.name;
-  }
+  // const handleRadio = e => {
+  //   console.log(e.target.previousSibling.name);
+  //   const name = e.target.previousSibling.name;
+  // }
 
   const handleChange = e => {
-    const name = e.target.name;
-    const value = e.target.value;
-    setFormData({...formData, [name]: value});
+    const name = e.target.previousSibling.name;
+    answerData.answer1.correct = false;
+    answerData.answer2.correct = false;
+    answerData.answer3.correct = false;
+    answerData.answer4.correct = false;
+    answerData[name].correct = true;
+    console.log(answerData.answer1.correct);
+    console.log(answerData.answer2.correct);
+    console.log(answerData.answer3.correct);
+    console.log(answerData.answer4.correct);
   };
+
   const addAnswer = e => {
-    const name = e.target.name;
-    const value = e.target.value;
-    setFormData({...formData, answers: [[name]: value]});
+    setFormData({...formData, text: temp5.text});
+    answerData.answer1.text = temp5.text1;
+    answerData.answer2.text = temp5.text2;
+    answerData.answer3.text = temp5.text3;
+    answerData.answer4.text = temp5.text4;
     axios.post('/question/preguntas', formData)
       .then(res => {
-        // setFormData({...formData, answers: [{...formData.answers, [text1]: value, [correct1]: value, temp},
-         // {...formData.answers, [text2]: value, [correct2]: value},
-         // {...formData.answers, [text3]: value, [correct3]: value},
-         // {...formData.answers, [text4]: value, [correct4]: value}]});
-        // setFormData({...formData, answers: [{...formData.answers, answerData text1, correct1, temp}});
-        setTemp('');
+        setTemp5({text: '', text1: '', text2: '', text3: '', text4: ''});
     });
   };
 
@@ -62,8 +62,8 @@ const Form2 = props => {
         required
         type="text"
         name="text"
-        onChange={handleChange}
-        value={formData.text}
+        onChange={e => setTemp5({...temp5, text: e.target.value})}
+        value={temp5.text}
       />
 
       <br />
@@ -71,45 +71,47 @@ const Form2 = props => {
       <label>Respuesta 1: </label>
       <input
         type="text"
-        name="text1"
+        name="answer1"
         required
-        onChange={e => setTemp(e.target.value)}
-        value={answerData.text1}
+        onChange={e => setTemp5({...temp5, text1: e.target.value})}
+        value={temp5.text1}
       />
-      <input name="qsy" type="radio" />
+      <input name="qsy" onChange={handleChange} type="radio" />
       <br />
       <br />
       <label>Respuesta 2: </label>
       <input
         type="text"
-        name="text2"
+        name="answer2"
         required
-        onChange={e => setTemp(e.target.value)}
-        value={answerData.text2}
+        onChange={e => setTemp5({...temp5, text2: e.target.value})}
+        value={temp5.text2}
       />
-      <input name="qsy" type="radio" />
+      <input name="qsy" onChange={handleChange} type="radio" />
       <br />
       <br />
 
       <label>Respuesta 3: </label>
       <input
         type="text"
-        name="text3"
-        onChange={e => setTemp(e.target.value)}
-        value={answerData.text3}
+        name="answer3"
+        required
+        onChange={e => setTemp5({...temp5, text3: e.target.value})}
+        value={temp5.text3}
       />
-      <input name="qsy" type="radio" />
+      <input name="qsy" onChange={handleChange} type="radio" />
       <br />
       <br />
 
       <label>Respuesta 4: </label>
       <input
         type="text"
-        name="text4"
-        onChange={e => setTemp(e.target.value)}
-        value={answerData.text4}
+        name="answer4"
+        required
+        onChange={e => setTemp5({...temp5, text4: e.target.value})}
+        value={temp5.text4}
       />
-      <input name="qsy" type="radio" />
+      <input name="qsy" onChange={handleChange} type="radio" />
       <br />
 
       <button onClick={addAnswer}>Mandar </button>

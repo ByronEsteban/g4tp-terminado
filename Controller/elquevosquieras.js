@@ -14,8 +14,8 @@ const getQuestionsById = (req, res) => {
 
 const createQuestion = (req, res) => {
   const id = req.params.id;
-  const { text, img, answer } = req.body;
-  const question = new Question({ text, img, answer });
+  const { text, answers } = req.body;
+  const question = new Question({ text, answers });
   question.save((err, Question) => {
     res.status(201).json(question);
   });
@@ -23,8 +23,8 @@ const createQuestion = (req, res) => {
 
 const updateQuestion = (req, res) => {
   const id = req.params.id;
-  const { text, img, answer } = req.body;
-  const question = { text, img, answer };
+  const { text, answers } = req.body;
+  const question = { text, answers };
   const options = {
     new: true
   };
