@@ -14,8 +14,8 @@ const getQuestionsById = (req, res) => {
 
 const createQuestion = (req, res) => {
   const id = req.params.id;
-  const { text, answers } = req.body;
-  const question = new Question({ text, answers });
+  const { text, tema, answers } = req.body;
+  const question = new Question({ text, tema, answers });
   question.save((err, Question) => {
     res.status(201).json(question);
   });
@@ -23,8 +23,8 @@ const createQuestion = (req, res) => {
 
 const updateQuestion = (req, res) => {
   const id = req.params.id;
-  const { text, answers } = req.body;
-  const question = { text, answers };
+  const { text, tema, answers } = req.body;
+  const question = { text, tema, answers };
   const options = {
     new: true
   };
@@ -35,7 +35,7 @@ const updateQuestion = (req, res) => {
 
 const deleteQuestion = (req, res) => {
   Question.findByIdAndDelete(req.params.id, err => {
-    const msg = {text: "Se borró todo OK"}
+    const msg = {text, tema: "Se borró todo OK"}
     res.status(200).json(msg);
   });
 }

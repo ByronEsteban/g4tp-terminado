@@ -22,6 +22,7 @@ const answerSchema = new mongoose.Schema({
 
 const questionSchema = new mongoose.Schema({
   text: String,
+  tema: String,
   answers: [answerSchema]
 });
 
