@@ -13,24 +13,3 @@ router.route('/question/:id')
   .delete(Controller.deleteQuestion);
 
 export default router;
-
-// {
-//   "text": "¿Jantus es...?",
-//   "answer": [
-//     {"text": "una profesora", "correct": false},
-//     {"text": "Jabba", "correct": true},
-//     {"text": "una ardilla", "correct": true},
-//     {"text": "tumama", "correct": false}
-//   ]
-// }
-
-// {
-//   "text": "¿Aprobaremos esto?",
-//   "img": "lalala"
-//   "answer": [
-//     {"text": "SI", "correct": false},
-//     {"text": "NO", "correct": true},
-//     {"text": "NO SE", "correct": false},
-//     {"text": "Trini es buen profesor", "correct": false}
-//   ]
-// }

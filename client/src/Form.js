@@ -1,8 +1,10 @@
 import axios from 'axios';
 import { useState } from 'react';
-import List from './List.js';
+import Array from './Array.js';
 
 const Form = props => {
+
+  // Array();
 
   const [answerData, setAnswerData] = useState({
     answer1: {text: '', correct: false},
@@ -122,7 +124,7 @@ const Form = props => {
         required
         onChange={e => setTemp({...temp, text4: e.target.value})}
         value={temp.text4}
-      />
+      />l
       <input name="qsy" onChange={handleChange} type="radio" />
       <br />
 
