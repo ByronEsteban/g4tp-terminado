@@ -13,7 +13,7 @@ const Play = props => {
     setFilteredQuestions(questions.filter(question =>
       question.tema == topic
     ));
-    console.log(filteredQuestions[0].answers[0]);
+    console.log(filteredQuestions);
   }
 
   useEffect(() => {
@@ -21,7 +21,6 @@ const Play = props => {
       .then(res => {
        console.log(res.data);
        setQuestions(res.data);
-       console.log(questions);
      });
   },[]);
 

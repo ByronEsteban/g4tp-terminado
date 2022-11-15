@@ -8,7 +8,7 @@ const Question = props => {
       {answers.map((answer, idx) => (
         <div key={idx}>
           <label>{answer.text}</label>
-          <input type="radio" />
+          <input type="radio" name={text}/>
           <br />
         </div>
       ))}

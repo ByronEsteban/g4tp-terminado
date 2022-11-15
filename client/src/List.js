@@ -10,7 +10,7 @@
 //
 //   return (
 //     <ul>
-//       {Question.map((question, idx) => (
+//       {.map((question, idx) => (
 //         <Question key={idx} question={question}/>
 //       ))}
 //     </ul>

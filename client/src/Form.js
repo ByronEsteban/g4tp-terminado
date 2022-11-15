@@ -4,20 +4,22 @@ import Array from './Array.js';
 
 const Form = props => {
 
-  // Array();
+  const [answerData, setAnswerData] = useState([
+    {text: 'MArsupial', correct: false},
+    {text: '', correct: false},
+    {text: '', correct: false},
+    {text: '', correct: false}]);
 
-  const [answerData, setAnswerData] = useState({
-    answer1: {text: '', correct: false},
-    answer2: {text: '', correct: false},
-    answer3: {text: '', correct: false},
-    answer4: {text: '', correct: false}
-  });
+  console.log(answerData);
+  console.log(answerData[0]);
 
   const [formData, setFormData] = useState({
     text: '',
     tema: '',
-    answers: [answerData]
+    answers: answerData
   });
+
+  console.log(formData);
 
   const [temp, setTemp] = useState({
     text: '', tema: '', text1: '', text2: '', text3: '', text4: ''
@@ -30,12 +32,12 @@ const Form = props => {
 
   const handleChange = e => {
     const name = e.target.previousSibling.name;
+    console.log(name);
     // const prevname = name;
-    answerData.answer1.correct = false;
-    answerData.answer2.correct = false;
-    answerData.answer3.correct = false;
-    answerData.answer4.correct = false;
+    for (let i = 0; i < 4; i++)
+      answerData[i].correct = false;
     answerData[name].correct = true;
+    console.log(answerData);
   };
 
   const prueba = e => {
@@ -45,10 +47,10 @@ const Form = props => {
   const addAnswer = e => {
     formData.text = temp.text;
     formData.tema = temp.tema;
-    answerData.answer1.text = temp.text1;
-    answerData.answer2.text = temp.text2;
-    answerData.answer3.text = temp.text3;
-    answerData.answer4.text = temp.text4;
+    answerData[0].text = temp.text1;
+    answerData[1].text = temp.text2;
+    answerData[2].text = temp.text3;
+    answerData[3].text = temp.text4;
     axios.post('/question/preguntas', formData)
       .then(res => {setTemp({text: '', tema: '', text1: '', text2: '', text3: '', text4: ''});
     });
@@ -85,7 +87,7 @@ const Form = props => {
       <label>Respuesta 1: </label>
       <input
         type="text"
-        name="answer1"
+        name= "0"
         required
         onChange={e => setTemp({...temp, text1: e.target.value})}
         value={temp.text1}
@@ -96,7 +98,7 @@ const Form = props => {
       <label>Respuesta 2: </label>
       <input
         type="text"
-        name="answer2"
+        name="1"
         required
         onChange={e => setTemp({...temp, text2: e.target.value})}
         value={temp.text2}
@@ -108,7 +110,7 @@ const Form = props => {
       <label>Respuesta 3: </label>
       <input
         type="text"
-        name="answer3"
+        name="2"
         required
         onChange={e => setTemp({...temp, text3: e.target.value})}
         value={temp.text3}
@@ -120,11 +122,11 @@ const Form = props => {
       <label>Respuesta 4: </label>
       <input
         type="text"
-        name="answer4"
+        name="3"
         required
         onChange={e => setTemp({...temp, text4: e.target.value})}
         value={temp.text4}
-      />l
+      />
       <input name="qsy" onChange={handleChange} type="radio" />
       <br />
 
