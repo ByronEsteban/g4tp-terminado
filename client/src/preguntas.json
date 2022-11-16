@@ -1,0 +1,853 @@
+[
+  {
+    "text": "¿Cómo se llama el planeta natal de Piccolo?",
+    "tema": "Dragon Ball",
+    "answers": [
+      {
+        "text": "Planeta Supremo",
+        "correct": false
+      },
+      {
+        "text": "Planeta Vegeta",
+        "correct": false
+      },
+      {
+        "text": "Namekusei",
+        "correct": true
+      },
+      {
+        "text": "La Tierra",
+        "correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "¿Qué hizo posible que Goku se transforme en Super Saiyayin? La muerte de:",
+    "tema": "Dragon Ball",
+    "answers": [
+      {
+        "text": "Krillin",
+        "correct": true
+      },
+      {
+        "text": "Piccolo",
+        "correct": false
+      },
+      {
+        "text": "Gohan",
+        "correct": false
+      },
+      {
+        "text": "Vegeta",
+        "correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "¿Cuántos Cell Junnior creó Cell en su torneo?",
+    "tema": "Dragon Ball",
+    "answers": [
+      {
+        "text": "5",
+        "correct": false
+      },
+      {
+        "text": "7",
+        "correct": true
+      },
+      {
+        "text": "6",
+        "correct": false
+      },
+      {
+        "text": "8",
+        "correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "¿Por qué Bills no destruye La Tierra?",
+    "tema": "Dragon Ball",
+    "answers": [
+      {
+        "text": "Nunca lo tuvo en mente",
+        "correct": false
+      },
+      {
+        "text": "Porque tuvo compasión y quiere pelear de nuevo contra Goku",
+        "correct": false
+      },
+      {
+        "text": "Porque no tiene suficiente fuerza",
+        "correct": false
+      },
+      {
+        "text": "Porque le gustó la comida de ahí",
+        "correct": true
+      }
+    ]
+  },
+
+  {
+    "text": "¿Cuántas transformaciones tiene Freezer?",
+    "tema": "Dragon Ball",
+    "answers": [
+      {
+        "text": "9",
+        "correct": true
+      },
+      {
+        "text": "7",
+        "correct": false
+      },
+      {
+        "text": "6",
+        "correct": false
+      },
+      {
+        "text": "8",
+        "correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "¿Quién derrota a Nappa?",
+    "tema": "Dragon Ball",
+    "answers": [
+      {
+        "text": "Gohan",
+        "correct": false
+      },
+      {
+        "text": "Goku",
+        "correct": true
+      },
+      {
+        "text": "Yagirobe",
+        "correct": false
+      },
+      {
+        "text": "Picollo",
+        "correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "¿Cuántos universos participaron en el torneo del poder?",
+    "tema": "Dragon Ball",
+    "answers": [
+      {
+        "text": "6",
+        "correct": false
+      },
+      {
+        "text": "9",
+        "correct": false
+      },
+      {
+        "text": "10",
+        "correct": false
+      },
+      {
+        "text": "8",
+        "correct": true
+      }
+    ]
+  },
+
+  {
+    "text": "¿Cuántas veces murio Krillin?",
+    "tema": "Dragon Ball",
+    "answers": [
+      {
+        "text": "4",
+        "correct": true
+      },
+      {
+        "text": "3",
+        "correct": false
+      },
+      {
+        "text": "2",
+        "correct": false
+      },
+      {
+        "text": "1",
+        "correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "¿Cómo se llama el hermano menor de Vegeta?",
+    "tema": "Dragon Ball",
+    "answers": [
+      {
+        "text": "Onio",
+        "correct": false
+      },
+      {
+        "text": "Tarble",
+        "correct": true
+      },
+      {
+        "text": "Cabba",
+        "correct": false
+      },
+      {
+        "text": "No tiene",
+        "correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "¿Cuál es el ataque mas fuerte de Vegeta?",
+    "tema": "Dragon Ball",
+    "answers": [
+      {
+        "text": "Explosión final",
+        "correct": false
+      },
+      {
+        "text": "Hakai",
+        "correct": true
+      },
+      {
+        "text": "Taiyoken",
+        "correct": false
+      },
+      {
+        "text": "Ragins Blast",
+        "correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "¿En qué año salio la primera película de Spiderman?",
+    "tema": "Marvel",
+    "answers": [
+      {
+        "text": "2004",
+        "correct": false
+      },
+      {
+        "text": "2005",
+        "correct": false
+      },
+      {
+        "text": "2002",
+        "correct": true
+      },
+      {
+        "text": "2001",
+        "correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "¿Cómo se llama el martillo de Thor?",
+    "tema": "Marvel",
+    "answers": [
+      {
+        "text": "Mjolnir",
+        "correct": true
+      },
+      {
+        "text": "Vanir",
+        "correct": false
+      },
+      {
+        "text": "Aesir",
+        "correct": false
+      },
+      {
+        "text": "Norn",
+        "correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "¿De qué está hecho el escudo del Capitán América?",
+    "tema": "Marvel",
+    "answers": [
+      {
+        "text": "Adamantium",
+        "correct": false
+      },
+      {
+        "text": "Vibranium",
+        "correct": true
+      },
+      {
+        "text": "Titanium",
+        "correct": false
+      },
+      {
+        "text": "Carbonadium",
+        "correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "¿Cuál es el verdadero nombre de Pantera Negra?",
+    "tema": "Marvel",
+    "answers": [
+      {
+        "text": "T'Palla",
+        "correct": false
+      },
+      {
+        "text": "R'Naka",
+        "correct": false
+      },
+      {
+        "text": "M'Baku",
+        "correct": false
+      },
+      {
+        "text": "T'Challa",
+        "correct": true
+      }
+    ]
+  },
+
+  {
+    "text": "¿Cómo se llama el villano con el que Dr Strange negocia en su primera película?",
+    "tema": "Marvel",
+    "answers": [
+      {
+        "text": "Dormamu",
+        "correct": true
+      },
+      {
+        "text": "Thanos",
+        "correct": false
+      },
+      {
+        "text": "Galactus",
+        "correct": false
+      },
+      {
+        "text": "Dr Doom",
+        "correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "¿Quién es asesinado por Loki en los Vengadores?",
+    "tema": "Marvel",
+    "answers": [
+      {
+        "text": "Maria Hill",
+        "correct": false
+      },
+      {
+        "text": "Fill Coulson",
+        "correct": true
+      },
+      {
+        "text": "Nick Fury",
+        "correct": false
+      },
+      {
+        "text": "Dr Erick Selving",
+        "correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "¿Qué tipo de médico era Stephen Strange?",
+    "tema": "Marvel",
+    "answers": [
+      {
+        "text": "Cirujano Plástico",
+        "correct": false
+      },
+      {
+        "text": "Psicólogo",
+        "correct": false
+      },
+      {
+        "text": "Dermatólogo",
+        "correct": false
+      },
+      {
+        "text": "Neurocirujano",
+        "correct": true
+      }
+    ]
+  },
+
+  {
+    "text": "¿En qué película aparece Spiderman por primera vez en el UCM?",
+    "tema": "Marvel",
+    "answers": [
+      {
+        "text": "Capitán América Civil War",
+        "correct": true
+      },
+      {
+        "text": "Spiderman Homecoming",
+        "correct": false
+      },
+      {
+        "text": "Iron Man 2",
+        "correct": false
+      },
+      {
+        "text": "Avengers Infinity War",
+        "correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "¿Cuál es la raza alienǵena que Loki envía para invadir La Tierra en The Avengers?",
+    "tema": "Marvel",
+    "answers": [
+      {
+        "text": "Los Skrulls",
+        "correct": false
+      },
+      {
+        "text": "Los Chitauri",
+        "correct": true
+      },
+      {
+        "text": "Los Kree",
+        "correct": false
+      },
+      {
+        "text": "Los Flerkens",
+        "correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "Peter Quill rechazó un Poder divino para poder derrotar a su padre ¿Cómo se llama ese poder que él rechazó?",
+    "tema": "Marvel",
+    "answers": [
+      {
+        "text": "Infinito",
+        "correct": false
+      },
+      {
+        "text": "Celestial",
+        "correct": true
+      },
+      {
+        "text": "De un Dios",
+        "correct": false
+      },
+      {
+        "text": "Eterno",
+        "correct": false
+      }
+    ]
+  },
+
+
+    {
+      "text": "¿Cómo se dice -Bordó- en inglés?",
+      "tema": "Inglés",
+      "answers": [
+        {
+          "text": "Boad",
+          "correct": false
+        },
+        {
+          "text": "Bod",
+          "correct": false
+        },
+        {
+          "text": "Board",
+          "correct": true
+        },
+        {
+          "text": "Bomn",
+          "correct": false
+        }
+      ]
+    },
+
+    {
+      "text": "¿Qué significa -Wakanda forever-?",
+      "tema": "Inglés",
+      "answers": [
+        {
+          "text": "Wakanda por siempre",
+          "correct": true
+        },
+        {
+          "text": "Wakanda vive siempre",
+          "correct": false
+        },
+        {
+          "text": "Wakanda vamos siempre",
+          "correct": false
+        },
+        {
+          "text": "Wakanda dale siempre",
+          "correct": false
+        }
+      ]
+    },
+
+    {
+      "text": "¿Cómo se dice en inglés -Voy a buscar la computadora para estudiar-?",
+      "tema": "Inglés",
+      "answers": [
+        {
+          "text": "I'm will use the computer is study",
+          "correct": false
+        },
+        {
+          "text": "I will use the computer to study",
+          "correct": true
+        },
+        {
+          "text": "I'm plays use the computer to study",
+          "correct": false
+        },
+        {
+          "text": "I'm use the computer to study",
+          "correct": false
+        }
+      ]
+    },
+
+    {
+      "text": "¿Cómo se traduce la palabra -Consciente-?",
+      "tema": "Inglés",
+      "answers": [
+        {
+          "text": "Ware",
+          "correct": false
+        },
+        {
+          "text": "Rare",
+          "correct": false
+        },
+        {
+          "text": "Make",
+          "correct": false
+        },
+        {
+          "text": "Aware",
+          "correct": true
+        }
+      ]
+    },
+
+    {
+      "text": "¿Cómo se escribe en inglés -¿A qué te dedicas?-?",
+      "tema": "Inglés",
+      "answers": [
+        {
+          "text": "What do you do?",
+          "correct": true
+        },
+        {
+          "text": "Where do you live",
+          "correct": false
+        },
+        {
+          "text": "How do you do",
+          "correct": false
+        },
+        {
+          "text": "Where are you live",
+          "correct": false
+        }
+      ]
+    },
+
+    {
+      "text": "Cómo se dice en inglés -Estufa-?",
+      "tema": "Dragon Ball",
+      "answers": [
+        {
+          "text": "Stagnant",
+          "correct": false
+        },
+        {
+          "text": "Stove",
+          "correct": true
+        },
+        {
+          "text": "Stovent",
+          "correct": false
+        },
+        {
+          "text": "Stivont",
+          "correct": false
+        }
+      ]
+    },
+
+    {
+      "text": "¿Cuál es el negativo de esta frase -We have walked-?",
+      "tema": "Inglés",
+      "answers": [
+        {
+          "text": "We didn't walked",
+          "correct": false
+        },
+        {
+          "text": "We have walkeded",
+          "correct": false
+        },
+        {
+          "text": "We won't walked",
+          "correct": false
+        },
+        {
+          "text": "We haven't walked",
+          "correct": true
+        }
+      ]
+    },
+
+    {
+      "text": "¿Qué significa en español la frase -Have you had fun today?-?",
+      "tema": "Inglés",
+      "answers": [
+        {
+          "text": "¿Te divertiste hoy?",
+          "correct": true
+        },
+        {
+          "text": "¿Cómo estuvo tu día hoy?",
+          "correct": false
+        },
+        {
+          "text": "¿Qué hiciste hoy?",
+          "correct": false
+        },
+        {
+          "text": "¿Qué pasó hoy?",
+          "correct": false
+        }
+      ]
+    },
+
+    {
+      "text": "¿Que signfica -Horse-?",
+      "tema": "Inglés",
+      "answers": [
+        {
+          "text": "Pesa",
+          "correct": false
+        },
+        {
+          "text": "Caballo",
+          "correct": true
+        },
+        {
+          "text": "Tornillo",
+          "correct": false
+        },
+        {
+          "text": "Pasto",
+          "correct": false
+        }
+      ]
+    },
+
+    {
+      "text": "¿Cómo se dice esta frase en inglés -Mi pareja (amorosa) y yo estamos viendo la tele-?",
+      "tema": "Inglés",
+      "answers": [
+        {
+          "text": "Me and my partner are watching the TV",
+          "correct": false
+        },
+        {
+          "text": "Me and my couple are watching the TV",
+          "correct": true
+        },
+        {
+          "text": "My girlfriend and I, watching the TV",
+          "correct": false
+        },
+        {
+          "text": "Me and my boyfriend are watch the TV",
+          "correct": false
+        }
+      ]
+    },
+
+    {
+      "text": "¿Cuántos Robin existieron en total?",
+      "tema": "DC",
+      "answers": [
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": true
+        },
+        {
+          "text": "4",
+          "correct": false
+        }
+      ]
+    },
+
+    {
+      "text": "¿En qué pelicula del DCU aparecen los 7 pecados capitales?",
+      "tema": "DC",
+      "answers": [
+        {
+          "text": "Shazam",
+          "correct": true
+        },
+        {
+          "text": "Liga de la justicia",
+          "correct": false
+        },
+        {
+          "text": "Black Adam",
+          "correct": false
+        },
+        {
+          "text": "Mujer Maravilla",
+          "correct": false
+        }
+      ]
+    },
+
+    {
+      "text": "¿Cómo se llama la hija de detective marciano?",
+      "tema": "DC",
+      "answers": [
+        {
+          "text": "M'yrnn J'onzz",
+          "correct": false
+        },
+        {
+          "text": "M'gan",
+          "correct": true
+        },
+        {
+          "text": "K'hym",
+          "correct": false
+        },
+        {
+          "text": "M'yri'ah",
+          "correct": false
+        }
+      ]
+    },
+
+    {
+      "text": "¿Cuál es el verdadero nombre de Supergirl?",
+      "tema": "DC",
+      "answers": [
+        {
+          "text": "Kara Danvers",
+          "correct": false
+        },
+        {
+          "text": "Linda Danvers",
+          "correct": false
+        },
+        {
+          "text": "Kal-El",
+          "correct": false
+        },
+        {
+          "text": "Zor-El",
+          "correct": true
+        }
+      ]
+    },
+
+    {
+      "text": "¿Cuál es el villano principal de Linterna Verde?",
+      "tema": "DC",
+      "answers": [
+        {
+          "text": "Siniestro",
+          "correct": true
+        },
+        {
+          "text": "Atrocitus",
+          "correct": false
+        },
+        {
+          "text": "Linterna Amarilla",
+          "correct": false
+        },
+        {
+          "text": "Brainiac",
+          "correct": false
+        }
+      ]
+    },
+
+    {
+      "text": "¿Cómo se llama el comisario que trabaja con Batman?",
+      "tema": "DC",
+      "answers": [
+        {
+          "text": "Barbara Gordon",
+          "correct": false
+        },
+        {
+          "text": "Jim Gordon",
+          "correct": true
+        },
+        {
+          "text": "Alfred",
+          "correct": false
+        },
+        {
+          "text": "Jhon Diggle",
+          "correct": false
+        }
+      ]
+    },
+
+    {
+      "text": "¿Por qué es imposible matar a Flash Reverso?",
+      "tema": "DC",
+      "answers": [
+        {
+          "text": "Porque es tan rapido que es imposible",
+          "correct": false
+        },
+        {
+          "text": "Porque es un ente viviente",
+          "correct": false
+        },
+        {
+          "text": "Si se lo puede matar",
+          "correct": false
+        },
+        {
+          "text": "Porque es una paradoja viviente",
+          "correct": true
+        }
+      ]
+    }
+]
