@@ -847,7 +847,305 @@
         {
           "text": "Porque es una paradoja viviente",
           "correct": true
-        }
+        },
       ]
-    }
+    },
+        {
+          "text": "¿Como se llama la hermana de Oliver Queen?",
+          "tema": "DC",
+          "answers": [
+            {
+              "text": "Thea Queen",
+              "correct": true
+            },
+            {
+              "text": "Moira Queen",
+              "correct": false
+            },
+            {
+              "text": "Laurel Queen",
+              "correct": false
+            },
+            {
+              "text": "Sara Queen",
+              "correct": false
+            }
+          ]
+        },
+
+        {
+          "text": "¿De que raza es la Mujer Maravilla?",
+          "tema": "DC",
+          "answers": [
+            {
+              "text": "Atlatianos",
+              "correct": false
+            },
+            {
+              "text": "Amazonas",
+              "correct": true
+            },
+            {
+              "text": "Azgardianas",
+              "correct": false
+            },
+            {
+              "text": "Astecas",
+              "correct": false
+            }
+          ]
+        },
+
+        {
+          "text": "¿Qué superpoder tiene Superman que no tiene Superboy?",
+          "tema": "DC",
+          "answers": [
+            {
+              "text": "Fuerza sobre humana",
+              "correct": false
+            },
+            {
+              "text": "Poder volar",
+              "correct": true
+            },
+            {
+              "text": "Rayos X",
+              "correct": false
+            },
+            {
+              "text": "Velocidad",
+              "correct": false
+            }
+          ]
+        },
+
+        {
+          "text": "¿Quién llevaba un bate con clavos en la segunda temporada?",
+          "tema": "Stranger Things",
+          "answers": [
+            {
+              "text": "Nancy Wheeler",
+              "correct": false
+            },
+            {
+              "text": "Jonathan Byers",
+              "correct": false
+            },
+            {
+              "text": "Steve Harrington",
+              "correct": true
+            },
+            {
+              "text": "Jim Hopper",
+              "correct": false
+            }
+          ]
+        },
+
+        {
+          "text": "¿Cuál es la comida favorita de Once?",
+          "tema": "Stranger Things",
+          "answers": [
+            {
+              "text": "Whafles",
+              "correct": true
+            },
+            {
+              "text": "Panqueques",
+              "correct": false
+            },
+            {
+              "text": "Galletitas",
+              "correct": false
+            },
+            {
+              "text": "Helado",
+              "correct": false
+            }
+          ]
+        },
+
+        {
+          "text": "¿Cómo se llama la hija de detective marciano?",
+          "tema": "DC",
+          "answers": [
+            {
+              "text": "M'yrnn J'onzz",
+              "correct": false
+            },
+            {
+              "text": "M'gan",
+              "correct": true
+            },
+            {
+              "text": "K'hym",
+              "correct": false
+            },
+            {
+              "text": "M'yri'ah",
+              "correct": false
+            }
+          ]
+        },
+
+        {
+          "text": "¿Cuál es el verdadero nombre de Supergirl?",
+          "tema": "DC",
+          "answers": [
+            {
+              "text": "Kara Danvers",
+              "correct": false
+            },
+            {
+              "text": "Linda Danvers",
+              "correct": false
+            },
+            {
+              "text": "Kal-El",
+              "correct": false
+            },
+            {
+              "text": "Zor-El",
+              "correct": true
+            }
+          ]
+        },
+
+        {
+          "text": "¿Cuál es el villano principal de Linterna Verde?",
+          "tema": "DC",
+          "answers": [
+            {
+              "text": "Siniestro",
+              "correct": true
+            },
+            {
+              "text": "Atrocitus",
+              "correct": false
+            },
+            {
+              "text": "Linterna Amarilla",
+              "correct": false
+            },
+            {
+              "text": "Brainiac",
+              "correct": false
+            }
+          ]
+        },
+
+        {
+          "text": "¿Cómo se llama el comisario que trabaja con Batman?",
+          "tema": "DC",
+          "answers": [
+            {
+              "text": "Barbara Gordon",
+              "correct": false
+            },
+            {
+              "text": "Jim Gordon",
+              "correct": true
+            },
+            {
+              "text": "Alfred",
+              "correct": false
+            },
+            {
+              "text": "Jhon Diggle",
+              "correct": false
+            }
+          ]
+        },
+
+        {
+          "text": "¿Por qué es imposible matar a Flash Reverso?",
+          "tema": "DC",
+          "answers": [
+            {
+              "text": "Porque es tan rapido que es imposible",
+              "correct": false
+            },
+            {
+              "text": "Porque es un ente viviente",
+              "correct": false
+            },
+            {
+              "text": "Si se lo puede matar",
+              "correct": false
+            },
+            {
+              "text": "Porque es una paradoja viviente",
+              "correct": true
+            },
+          ]
+        },
+            {
+              "text": "¿Como se llama la hermana de Oliver Queen?",
+              "tema": "DC",
+              "answers": [
+                {
+                  "text": "Thea Queen",
+                  "correct": true
+                },
+                {
+                  "text": "Moira Queen",
+                  "correct": false
+                },
+                {
+                  "text": "Laurel Queen",
+                  "correct": false
+                },
+                {
+                  "text": "Sara Queen",
+                  "correct": false
+                }
+              ]
+            },
+
+            {
+              "text": "¿De que raza es la Mujer Maravilla?",
+              "tema": "DC",
+              "answers": [
+                {
+                  "text": "Atlatianos",
+                  "correct": false
+                },
+                {
+                  "text": "Amazonas",
+                  "correct": true
+                },
+                {
+                  "text": "Azgardianas",
+                  "correct": false
+                },
+                {
+                  "text": "Astecas",
+                  "correct": false
+                }
+              ]
+            },
+
+            {
+              "text": "¿Qué superpoder tiene Superman que no tiene Superboy?",
+              "tema": "DC",
+              "answers": [
+                {
+                  "text": "Fuerza sobre humana",
+                  "correct": false
+                },
+                {
+                  "text": "Poder volar",
+                  "correct": true
+                },
+                {
+                  "text": "Rayos X",
+                  "correct": false
+                },
+                {
+                  "text": "Velocidad",
+                  "correct": false
+                }
+              ]
+            },
+
 ]
