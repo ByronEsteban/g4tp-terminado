@@ -104,7 +104,7 @@ const Play = props => {
   return (
     <div>
       <br />
-      <select id="select">
+      <select id="select" onChange={e => {document.getElementById('jugar').disabled = false}}>
         <option>Seleccionar Tema</option>
         <option>Dragon Ball</option>
         <option>Marvel</option>
