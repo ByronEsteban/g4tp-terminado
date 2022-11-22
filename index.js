@@ -8,7 +8,7 @@ const DB = 'mongodb+srv://evagriodb:Jokerlal10@questions.q6gicwm.mongodb.net/?re
 
 const app = express();
 
-mongoose.connect('mongodb://127.0.0.1/Preguntados')
+mongoose.connect(DB)
    .then(() => console.log("Sigue yendo bien"))
    .catch(err => console.log(err));
 
