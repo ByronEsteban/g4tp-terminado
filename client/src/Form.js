@@ -4,7 +4,7 @@ import { useState } from 'react';
 const Form = props => {
 
   const [answerData, setAnswerData] = useState([
-    {text: 'MArsupial', correct: false},
+    {text: '', correct: false},
     {text: '', correct: false},
     {text: '', correct: false},
     {text: '', correct: false}]);
@@ -38,22 +38,25 @@ const Form = props => {
   };
 
   const addAnswer = e => {
-    formData.text = temp.text;
-    formData.tema = temp.tema;
-    answerData[0].text = temp.text1;
-    answerData[1].text = temp.text2;
-    answerData[2].text = temp.text3;
-    answerData[3].text = temp.text4;
-    axios.post('/question', formData)
-      .then(res => {setTemp({text: '', tema: '', text1: '', text2: '', text3: '', text4: ''});
-    });
-    console.log(formData);
+    console.log(temp.tema == '');
+    if (temp.tema != '') {
+      formData.text = temp.text;
+      formData.tema = temp.tema;
+      answerData[0].text = temp.text1;
+      answerData[1].text = temp.text2;
+      answerData[2].text = temp.text3;
+      answerData[3].text = temp.text4;
+      axios.post('/question', formData)
+        .then(res => {setTemp({text: '', tema: '', text1: '', text2: '', text3: '', text4: ''});
+      });
+    } else alert("Elegí un tema");
+    document.getElementById('select').value = "Seleccionar Tema";
   };
 
   return (
     <div>
     <form onSubmit={handleSubmit}>
-      <select onChange={prueba}>
+      <select id="select" onChange={prueba}>
         <option>Seleccionar Tema</option>
         <option>Dragon Ball</option>
         <option>Marvel</option>
@@ -86,7 +89,7 @@ const Form = props => {
         onChange={e => setTemp({...temp, text1: e.target.value})}
         value={temp.text1}
       />
-      <input name="qsy" onChange={handleChange} type="radio" />
+      <input required name="qsy" onChange={handleChange} type="radio" />
       <br />
       <br />
       <label>Respuesta 2: </label>
@@ -97,7 +100,7 @@ const Form = props => {
         onChange={e => setTemp({...temp, text2: e.target.value})}
         value={temp.text2}
       />
-      <input name="qsy" onChange={handleChange} type="radio" />
+      <input required name="qsy" onChange={handleChange} type="radio" />
       <br />
       <br />
 
@@ -109,7 +112,7 @@ const Form = props => {
         onChange={e => setTemp({...temp, text3: e.target.value})}
         value={temp.text3}
       />
-      <input name="qsy" onChange={handleChange} type="radio" />
+      <input required name="qsy" onChange={handleChange} type="radio" />
       <br />
       <br />
 
@@ -121,7 +124,7 @@ const Form = props => {
         onChange={e => setTemp({...temp, text4: e.target.value})}
         value={temp.text4}
       />
-      <input name="qsy" onChange={handleChange} type="radio" />
+      <input required name="qsy" onChange={handleChange} type="radio" />
       <br />
 
       <button onClick={addAnswer}>Mandar </button>

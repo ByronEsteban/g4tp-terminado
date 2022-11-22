@@ -13,7 +13,6 @@ const Play = props => {
 
   const handleChange = e => {
     const name = e.target.id;
-    console.log(name);
     for (let i = 0; i < 4; i++)
       trueAnswer[i].correct = false;
     trueAnswer[name].correct = true;
@@ -26,25 +25,20 @@ const Play = props => {
   }
 
   const handleClick = e => {
-    const topic = document.getElementById('select').value;
-    setFilteredQuestions(questions.filter(question =>
-      question.tema == topic
-    ));
-    console.log(filteredQuestions);
-    document.getElementById('jugar').disabled = true;
+    if (document.getElementById('select').value != "Seleccionar Tema") {
+      setFilteredQuestions(questions.filter(question =>
+        question.tema == document.getElementById('select').value
+      ));
+      console.log(filteredQuestions);
+      document.getElementById('jugar').disabled = true;
+      document.getElementById('select').disabled = true;
+    }
   }
 
-  const lala = () => {
-    filteredQuestions.map((question,idx) => {
-      if (r === idx){
-        console.log(idx);
-        return (<div>
-          <Question key={idx} question={question} />
-          <input type="button" value="Enviar" onClick={sendAnswer}/>
-          </div>)
-      }
-    }
-    )
+  const changeTheme = e =>{
+    document.getElementById('jugar').disabled = false;
+    document.getElementById('select').disabled = false;
+    setFilteredQuestions([]);
   }
 
   const sendAnswer = e => {
@@ -59,11 +53,9 @@ const Play = props => {
       console.log("bieeennn");
       racha++;
       console.log(racha);
-      const topic = document.getElementById('select').value;
       setFilteredQuestions(questions.filter(question =>
-        question.tema == topic
+        question.tema == document.getElementById('select').value
       ));
-      console.log(filteredQuestions);
     }
     else {
       alert("Tremendo maloooo");
@@ -75,7 +67,7 @@ const Play = props => {
   const Question = props => {
 
     const { text, tema, answers } = props.question;
-  
+
     return (
       <div name="Callate Amparo">
         <h2>{text}</h2>
@@ -126,6 +118,7 @@ const Play = props => {
               <label>Racha: {racha}</label>
               <br /><br />
               <input type="button" value="Reintentar" onClick={tryAgain} hidden={!hidden}/>
+              <input type="button" value="Cambiar tema" onClick={changeTheme} hidden={!hidden}/>
               </div>)
           }
         }
