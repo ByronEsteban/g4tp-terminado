@@ -966,115 +966,115 @@
         },
 
         {
-          "text": "¿Cómo se llama la hija de detective marciano?",
-          "tema": "DC",
+          "text": "¿Cuál es la verdadera identidad de Vecna?",
+          "tema": "Stranger Things",
           "answers": [
             {
-              "text": "M'yrnn J'onzz",
+              "text": "Billy",
               "correct": false
             },
             {
-              "text": "M'gan",
+              "text": "Henry",
               "correct": true
             },
             {
-              "text": "K'hym",
+              "text": "Victor Creel",
               "correct": false
             },
             {
-              "text": "M'yri'ah",
+              "text": "Martin",
               "correct": false
             }
           ]
         },
 
         {
-          "text": "¿Cuál es el verdadero nombre de Supergirl?",
-          "tema": "DC",
+          "text": "¿Con quién pasa el tiempo Once cuando se pelea con Mike?",
+          "tema": "Stranger Things",
           "answers": [
             {
-              "text": "Kara Danvers",
+              "text": "Hopper",
               "correct": false
             },
             {
-              "text": "Linda Danvers",
+              "text": "Con nadie",
               "correct": false
             },
             {
-              "text": "Kal-El",
+              "text": "Con Ocho",
               "correct": false
             },
             {
-              "text": "Zor-El",
+              "text": "Max",
               "correct": true
             }
           ]
         },
 
         {
-          "text": "¿Cuál es el villano principal de Linterna Verde?",
-          "tema": "DC",
+          "text": "¿De dónde se inspiran los personajes principales para llamar a los monstruos?",
+          "tema": "Stranger Things",
           "answers": [
             {
-              "text": "Siniestro",
+              "text": "Calabozos y Dragones",
               "correct": true
             },
             {
-              "text": "Atrocitus",
+              "text": "El Ataque de los Dragones",
               "correct": false
             },
             {
-              "text": "Linterna Amarilla",
+              "text": "Calabozos de Furia",
               "correct": false
             },
             {
-              "text": "Brainiac",
+              "text": "El Ataque de la Furia",
               "correct": false
             }
           ]
         },
 
         {
-          "text": "¿Cómo se llama el comisario que trabaja con Batman?",
-          "tema": "DC",
+          "text": "¿Qué poder tiene Ocho?",
+          "tema": "Stranger Things",
           "answers": [
             {
-              "text": "Barbara Gordon",
+              "text": "Mueve cosas con la mente",
               "correct": false
             },
             {
-              "text": "Jim Gordon",
+              "text": "Control mental",
               "correct": true
             },
             {
-              "text": "Alfred",
+              "text": "Escucha tus pensamientos",
               "correct": false
             },
             {
-              "text": "Jhon Diggle",
+              "text": "Habla con los demás por la mente",
               "correct": false
             }
           ]
         },
 
         {
-          "text": "¿Por qué es imposible matar a Flash Reverso?",
-          "tema": "DC",
+          "text": "¿Qué cancion escucha Max para salir del control de Vecna?",
+          "tema": "Stranger Things",
           "answers": [
             {
-              "text": "Porque es tan rapido que es imposible",
+              "text": "Girls Just Wanna Have Fun",
               "correct": false
             },
             {
-              "text": "Porque es un ente viviente",
+              "text": "Take On Me",
               "correct": false
             },
             {
-              "text": "Si se lo puede matar",
+              "text": "Never Gonna Give You Up",
               "correct": false
             },
             {
-              "text": "Porque es una paradoja viviente",
+              "text": "Running Up That Hill",
               "correct": true
             }
           ]
@@ -1146,6 +1146,490 @@
                   "correct": false
                 }
               ]
-            }
+            },
+
+
+
+
+            {
+              "text": "¿A quiénes mata Negan en el final de la temporada 6 y el comienzo de la 7?",
+              "tema": "The Walking Dead",
+              "answers": [
+                {
+                  "text": "Glenn y Rosita",
+                  "correct": false
+                },
+                {
+                  "text": "Glenn y Sasha",
+                  "correct": false
+                },
+                {
+                  "text": "Glenn y Abraham",
+                  "correct": true
+                },
+                {
+                  "text": "Glenn y Aaron",
+                  "correct": false
+                }
+              ]
+            },
+
+            {
+              "text": "¿Cómo se llama la villana de la temporada 9?",
+              "tema": "The Walking Dead",
+              "answers": [
+                {
+                  "text": "Alpha",
+                  "correct": true
+                },
+                {
+                  "text": "Beta",
+                  "correct": false
+                },
+                {
+                  "text": "Negan",
+                  "correct": false
+                },
+                {
+                  "text": "Gamma",
+                  "correct": false
+                }
+              ]
+            },
+
+            {
+              "text": "¿Cómo muere Carl?",
+              "tema": "The Walking Dead",
+              "answers": [
+                {
+                  "text": "De un disparo en el ojo",
+                  "correct": false
+                },
+                {
+                  "text": "Mordida de zombie",
+                  "correct": true
+                },
+                {
+                  "text": "Se suicida",
+                  "correct": false
+                },
+                {
+                  "text": "Lo mata Negan",
+                  "correct": false
+                }
+              ]
+            },
+
+            {
+              "text": "¿Quién de estos murió primero?",
+              "tema": "The Walking Dead",
+              "answers": [
+                {
+                  "text": "Hershel",
+                  "correct": false
+                },
+                {
+                  "text": "Shane",
+                  "correct": false
+                },
+                {
+                  "text": "Andrea",
+                  "correct": false
+                },
+                {
+                  "text": "Dale",
+                  "correct": true
+                }
+              ]
+            },
+
+            {
+              "text": "En la temporada 4 ¿Qué hace Rick para defender a su hijo Carl cuando unos hombres los tienen arrodillados?",
+              "tema": "The Walking Dead",
+              "answers": [
+                {
+                  "text": "Le muerde el cuello a uno",
+                  "correct": true
+                },
+                {
+                  "text": "Les corta la cabeza",
+                  "correct": false
+                },
+                {
+                  "text": "Los tira encima de unos zombies",
+                  "correct": false
+                },
+                {
+                  "text": "Los mata con un revolver",
+                  "correct": false
+                }
+              ]
+            },
+
+            {
+              "text": "¿Cómo se llama el actor que interpreta a Carl?",
+              "tema": "The Walking Dead",
+              "answers": [
+                {
+                  "text": "Andrew Lincoln",
+                  "correct": false
+                },
+                {
+                  "text": "Chandler Carton Riggs",
+                  "correct": true
+                },
+                {
+                  "text": "Norman Reedus",
+                  "correct": false
+                },
+                {
+                  "text": "Jeffrey Dean Morgan",
+                  "correct": false
+                }
+              ]
+            },
+
+            {
+              "text": "¿Quiénes de estos personajes no murieron todavía?",
+              "tema": "The Walking Dead",
+              "answers": [
+                {
+                  "text": "Rick Grimes",
+                  "correct": false
+                },
+                {
+                  "text": "Michonne",
+                  "correct": false
+                },
+                {
+                  "text": "Daryl Dixon",
+                  "correct": false
+                },
+                {
+                  "text": "Todas son correctas",
+                  "correct": true
+                }
+              ]
+            },
+                {
+                  "text": "¿Por qué Negan no mata a Carl en el último capítulo de la temporada 7?",
+                  "tema": "The Walking Dead",
+                  "answers": [
+                    {
+                      "text": "Por la entrada de un tigre",
+                      "correct": true
+                    },
+                    {
+                      "text": "Por la interrupción de Daryl",
+                      "correct": false
+                    },
+                    {
+                      "text": "Nunca estuvo por matarlo",
+                      "correct": false
+                    },
+                    {
+                      "text": "Porque Rick se interpuso",
+                      "correct": false
+                    }
+                  ]
+                },
+
+                {
+                  "text": "¿Por qué se mueren casi todos los personajes secundarios en la cárcel?",
+                  "tema": "The Walking Dead",
+                  "answers": [
+                    {
+                      "text": "Por una invasión de zombies",
+                      "correct": false
+                    },
+                    {
+                      "text": "Por una gripe",
+                      "correct": true
+                    },
+                    {
+                      "text": "Por el Gobernador",
+                      "correct": false
+                    },
+                    {
+                      "text": "Por un incendio",
+                      "correct": false
+                    }
+                  ]
+                },
+
+                {
+                  "text": "¿Qué decían ser Abraham, Eugene y Rosita?",
+                  "tema": "The Walking Dead",
+                  "answers": [
+                    {
+                      "text": "Científicos",
+                      "correct": false
+                    },
+                    {
+                      "text": "Militares",
+                      "correct": true
+                    },
+                    {
+                      "text": "Médicos",
+                      "correct": false
+                    },
+                    {
+                      "text": "Sobrevivientes",
+                      "correct": false
+                    }
+                  ]
+                },
+
+
+                {
+                  "text": "¿Quién de estos alumnos se va del colegio?",
+                  "tema": "4to 4ta",
+                  "answers": [
+                    {
+                      "text": "Nicolás Sagues",
+                      "correct": false
+                    },
+                    {
+                      "text": "Stefano Iacovonne",
+                      "correct": false
+                    },
+                    {
+                      "text": "Enzo Perez",
+                      "correct": true
+                    },
+                    {
+                      "text": "Alvin Anaya",
+                      "correct": false
+                    }
+                  ]
+                },
+
+                {
+                  "text": "¿Quién es el principal villano/a del aula?",
+                  "tema": "4to 4ta",
+                  "answers": [
+                    {
+                      "text": "Santiago Trini",
+                      "correct": true
+                    },
+                    {
+                      "text": "Rodrigo Serantes",
+                      "correct": false
+                    },
+                    {
+                      "text": "Susana Jantus",
+                      "correct": false
+                    },
+                    {
+                      "text": "Fabiola Pérez Pardella",
+                      "correct": false
+                    }
+                  ]
+                },
+
+                {
+                  "text": "¿Quién tiene las mejores notas?",
+                  "tema": "4to 4ta",
+                  "answers": [
+                    {
+                      "text": "Byron Urriza",
+                      "correct": false
+                    },
+                    {
+                      "text": "Lucca Cavalcanti",
+                      "correct": true
+                    },
+                    {
+                      "text": "Facundo Piputto",
+                      "correct": false
+                    },
+                    {
+                      "text": "Francisco Sanmaniego",
+                      "correct": false
+                    }
+                  ]
+                },
+
+                {
+                  "text": "¿Quién es más alto?",
+                  "tema": "4to 4ta",
+                  "answers": [
+                    {
+                      "text": "Alan Gadea",
+                      "correct": false
+                    },
+                    {
+                      "text": "Alvin Anaya",
+                      "correct": false
+                    },
+                    {
+                      "text": "Valentín Antezana",
+                      "correct": false
+                    },
+                    {
+                      "text": "Federico Heredia",
+                      "correct": true
+                    }
+                  ]
+                },
+
+                {
+                  "text": "¿Quién es el mejor profesor?",
+                  "tema": "4to 4ta",
+                  "answers": [
+                    {
+                      "text": "Rodrigo Serantes",
+                      "correct": true
+                    },
+                    {
+                      "text": "Mariana D'Amico",
+                      "correct": false
+                    },
+                    {
+                      "text": "Javier Bolis",
+                      "correct": false
+                    },
+                    {
+                      "text": "Viviana Bartucci",
+                      "correct": false
+                    }
+                  ]
+                },
+
+                {
+                  "text": "¿Quién de estos merece morir?",
+                  "tema": "4to 4ta",
+                  "answers": [
+                    {
+                      "text": "Nicolás Cotari",
+                      "correct": false
+                    },
+                    {
+                      "text": "Stefano Iacovonne",
+                      "correct": true
+                    },
+                    {
+                      "text": "Emanuel Grassi",
+                      "correct": false
+                    },
+                    {
+                      "text": "Nadie merece morir <3",
+                      "correct": false
+                    }
+                  ]
+                },
+
+                {
+                  "text": "¿Quién es el mejor de Ajedrez?",
+                  "tema": "4to 4ta",
+                  "answers": [
+                    {
+                      "text": "Lucca Cavalcanti",
+                      "correct": false
+                    },
+                    {
+                      "text": "Thiago Mateo",
+                      "correct": false
+                    },
+                    {
+                      "text": "Valentín Antezana",
+                      "correct": false
+                    },
+                    {
+                      "text": "Santiago Morito",
+                      "correct": true
+                    }
+                  ]
+                },
+                    {
+                      "text": "¿Qué profesor/a faltó más durante el año?",
+                      "tema": "4to 4ta",
+                      "answers": [
+                        {
+                          "text": "Fabiola Perez Pardella",
+                          "correct": true
+                        },
+                        {
+                          "text": "Laura Bossi",
+                          "correct": false
+                        },
+                        {
+                          "text": "Susana Jantus",
+                          "correct": false
+                        },
+                        {
+                          "text": "Viviana Bartucci",
+                          "correct": false
+                        }
+                      ]
+                    },
+
+                    {
+                      "text": "¿Quién es el alumno chitero por defecto?",
+                      "tema": "4to 4ta",
+                      "answers": [
+                        {
+                          "text": "Nahuel Blanco",
+                          "correct": false
+                        },
+                        {
+                          "text": "Alan Álbarez",
+                          "correct": true
+                        },
+                        {
+                          "text": "Ignacio Lesta",
+                          "correct": false
+                        },
+                        {
+                          "text": "Thiago Mateo",
+                          "correct": false
+                        }
+                      ]
+                    },
+
+                    {
+                      "text": "¿Quién hace mas clicks por segundo?",
+                      "tema": "4to 4ta",
+                      "answers": [
+                        {
+                          "text": "Stefano Iacovonne",
+                          "correct": false
+                        },
+                        {
+                          "text": "Ignacio Lesta",
+                          "correct": true
+                        },
+                        {
+                          "text": "Santiago Calvelo",
+                          "correct": false
+                        },
+                        {
+                          "text": "Valentín Antezana",
+                          "correct": false
+                        }
+                      ]
+                    },
+                    {
+                      "text": "¿De qué grupo es el mejor trabajo de Proyecto Informático 1?",
+                      "tema": "4to 4ta",
+                      "answers": [
+                        {
+                          "text": "Grupo 5",
+                          "correct": false
+                        },
+                        {
+                          "text": "Grupo 3",
+                          "correct": false
+                        },
+                        {
+                          "text": "Grupo 4",
+                          "correct": true
+                        },
+                        {
+                          "text": "Grupo 2",
+                          "correct": false
+                        }
+                      ]
+                    }
 
 ]
