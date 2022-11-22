@@ -18,7 +18,7 @@ app.use(express.static('public'));
 
 app.use('/', router);
 
-app.get('/', (req, res) => {
+app.get('/jay', (req, res) => {
   res.send('Hello world');
 });
 
