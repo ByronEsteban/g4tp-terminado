@@ -847,7 +847,7 @@
         {
           "text": "Porque es una paradoja viviente",
           "correct": true
-        },
+        }
       ]
     },
         {
@@ -1076,7 +1076,7 @@
             {
               "text": "Porque es una paradoja viviente",
               "correct": true
-            },
+            }
           ]
         },
             {
@@ -1146,6 +1146,6 @@
                   "correct": false
                 }
               ]
-            },
+            }
 
 ]

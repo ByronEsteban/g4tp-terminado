@@ -3,7 +3,7 @@ import Controller from '../Controller/elquevosquieras.js';
 
 const router = express.Router();
 
-router.route('/question/preguntas')
+router.route('/question')
   .get(Controller.getAllQuestions)
   .post(Controller.createQuestion)
 

@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { useState } from 'react';
-import Array from './Array.js';
 
 const Form = props => {
 
@@ -10,16 +9,11 @@ const Form = props => {
     {text: '', correct: false},
     {text: '', correct: false}]);
 
-  console.log(answerData);
-  console.log(answerData[0]);
-
   const [formData, setFormData] = useState({
     text: '',
     tema: '',
     answers: answerData
   });
-
-  console.log(formData);
 
   const [temp, setTemp] = useState({
     text: '', tema: '', text1: '', text2: '', text3: '', text4: ''
@@ -33,7 +27,6 @@ const Form = props => {
   const handleChange = e => {
     const name = e.target.previousSibling.name;
     console.log(name);
-    // const prevname = name;
     for (let i = 0; i < 4; i++)
       answerData[i].correct = false;
     answerData[name].correct = true;
@@ -51,7 +44,7 @@ const Form = props => {
     answerData[1].text = temp.text2;
     answerData[2].text = temp.text3;
     answerData[3].text = temp.text4;
-    axios.post('/question/preguntas', formData)
+    axios.post('/question', formData)
       .then(res => {setTemp({text: '', tema: '', text1: '', text2: '', text3: '', text4: ''});
     });
     console.log(formData);

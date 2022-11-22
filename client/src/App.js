@@ -1,8 +1,5 @@
 import Form from './Form.js';
-// import List from './List.js';
-// import Items from './Items.js';
 import Play from './Play.js';
-// import Array from './Array.js';
 
 const App = () => {
   return (

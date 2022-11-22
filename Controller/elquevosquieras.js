@@ -1,4 +1,4 @@
-import Question from '../Models/preguntas.js';
+import Question from '../Models/Preguntas.js';
 
 const getAllQuestions = (req, res) => {
   Question.find((err, Questions) => {
