@@ -1,62 +1,63 @@
 import axios from 'axios';
 import { useState } from 'react';
 
-const Form = props => {
+//Se habilita cuando se elige una opción correcta y se desabilita si no se elige
+let a = 0;
 
+const Form = props => {
+  //Esquema de las respuestas
   const [answerData, setAnswerData] = useState([
     {text: '', correct: false},
     {text: '', correct: false},
     {text: '', correct: false},
-    {text: '', correct: false}]);
-
-  const [formData, setFormData] = useState({
+    {text: '', correct: false}
+  ]);
+  
+  //Esquema de las preguntas
+  const [questionData, setQuestionData] = useState({
     text: '',
     tema: '',
     answers: answerData
   });
 
+  //Temporal donde se guardan los textos de las respuestas
   const [temp, setTemp] = useState({
-    text: '', tema: '', text1: '', text2: '', text3: '', text4: ''
+    text1: '', text2: '', text3: '', text4: ''
   });
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    console.log('Sending data to server...', formData);
-  };
-
+  
+  //Función para elegir opción correcta
   const handleChange = e => {
+    a = 1;
     const name = e.target.previousSibling.name;
-    console.log(name);
     for (let i = 0; i < 4; i++)
       answerData[i].correct = false;
     answerData[name].correct = true;
-    console.log(answerData);
   };
-
-  const prueba = e => {
-    temp.tema = e.target.value;
-  };
-
+  
+  //Función que se activa con el botón "Enviar" pregunta
   const addAnswer = e => {
-    console.log(temp.tema == '');
-    if (temp.tema != '') {
-      formData.text = temp.text;
-      formData.tema = temp.tema;
+    if (a && questionData.tema != 'Seleccionar Tema' && questionData.tema != '') {
+      a = 0;
       answerData[0].text = temp.text1;
       answerData[1].text = temp.text2;
       answerData[2].text = temp.text3;
       answerData[3].text = temp.text4;
-      axios.post('/question', formData)
-        .then(res => {setTemp({text: '', tema: '', text1: '', text2: '', text3: '', text4: ''});
+      //Devolvemos los elementos a su valor original
+      axios.post('/question', questionData)
+        .then(res => {setTemp({text1: '', text2: '', text3: '', text4: ''})
       });
-    } else alert("Elegí un tema");
-    document.getElementById('select').value = "Seleccionar Tema";
+      setQuestionData({text: '', tema: ''});
+      const radius = document.getElementsByName('radius');
+      for (let i = 0; i < radius.length; i++) 
+        radius[i].checked = false;
+      document.getElementById('topics').value = "Seleccionar Tema";
+    } else alert("Falta completar cosas");
   };
 
   return (
     <div>
-    <form onSubmit={handleSubmit}>
-      <select id="select" onChange={prueba}>
+    <form onSubmit={e => {e.preventDefault()}}>
+      <select id="topics" onChange={e => {setQuestionData({...questionData, tema: e.target.value})}}>
         <option>Seleccionar Tema</option>
         <option>Dragon Ball</option>
         <option>Marvel</option>
@@ -75,8 +76,8 @@ const Form = props => {
         required
         type="text"
         name="text"
-        onChange={e => setTemp({...temp, text: e.target.value})}
-        value={temp.text}
+        onChange={e => setQuestionData({...questionData, text: e.target.value})}
+        value={questionData.text}
       />
 
       <br />
@@ -89,7 +90,7 @@ const Form = props => {
         onChange={e => setTemp({...temp, text1: e.target.value})}
         value={temp.text1}
       />
-      <input required name="qsy" onChange={handleChange} type="radio" />
+      <input required name="radius" onChange={handleChange} type="radio" />
       <br />
       <br />
       <label>Respuesta 2: </label>
@@ -100,7 +101,7 @@ const Form = props => {
         onChange={e => setTemp({...temp, text2: e.target.value})}
         value={temp.text2}
       />
-      <input required name="qsy" onChange={handleChange} type="radio" />
+      <input required name="radius" onChange={handleChange} type="radio" />
       <br />
       <br />
 
@@ -112,7 +113,7 @@ const Form = props => {
         onChange={e => setTemp({...temp, text3: e.target.value})}
         value={temp.text3}
       />
-      <input required name="qsy" onChange={handleChange} type="radio" />
+      <input required name="radius" onChange={handleChange} type="radio" />
       <br />
       <br />
 
@@ -124,7 +125,7 @@ const Form = props => {
         onChange={e => setTemp({...temp, text4: e.target.value})}
         value={temp.text4}
       />
-      <input required name="qsy" onChange={handleChange} type="radio" />
+      <input required name="radius" onChange={handleChange} type="radio" />
       <br />
 
       <button onClick={addAnswer}>Mandar </button>

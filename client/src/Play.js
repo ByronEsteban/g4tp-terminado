@@ -1,80 +1,98 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
+//Racha y una variable igual a la de Form
 let racha = 0;
+let a = 1;
 
 const Play = props => {
-
+  
   const [questions, setQuestions] = useState([]);
+  //Preguntas filtradas por tema
   const [filteredQuestions, setFilteredQuestions] = useState([]);
+  //Para esconder o mostrar botones
   const [hidden, setHidden] = useState(false);
   const [trueAnswer, setTrueAnswer] = useState([
     {correct: false}, {correct: false}, {correct: false}, {correct: false}]);
-
+  
+  //Función para elegir opción correcta
   const handleChange = e => {
+    a = 0;
     const name = e.target.id;
     for (let i = 0; i < 4; i++)
       trueAnswer[i].correct = false;
     trueAnswer[name].correct = true;
     console.log(trueAnswer);
   }
-
+  
+  //Función del botón "Reintentar"
   const tryAgain = e => {
     setHidden(false);
     racha = 0;
   }
-
+  
+  //Función del botón "Jugar"
   const handleClick = e => {
     if (document.getElementById('select').value != "Seleccionar Tema") {
+      setHidden(false);
       setFilteredQuestions(questions.filter(question =>
         question.tema == document.getElementById('select').value
       ));
-      console.log(filteredQuestions);
       document.getElementById('jugar').disabled = true;
       document.getElementById('select').disabled = true;
-    }
+    } else alert("Elegí un tema");
   }
 
+  //Función del botón "Cambiar tema"
   const changeTheme = e =>{
     document.getElementById('jugar').disabled = false;
     document.getElementById('select').disabled = false;
     setFilteredQuestions([]);
   }
 
+  //Función del botón "Enviar" respuesta
   const sendAnswer = e => {
-    let j = 0;
+    //Si no se eligió una respuesta correcta no hace nada
+    if (a) {
+      alert("Elegí una opción correcta");
+      return;
+    }
+    a = 1;
+    let win = 0;
     for (let i = 0; i < 4; i++) {
       if (trueAnswer[i].correct == true && filteredQuestions[r].answers[i].correct == true) {
-        j = 1;
+        win = 1;
+        break;
       }
     }
-    if (j) {
+    if (win) {
       alert("Biennn!!! No sos tan bruto");
-      console.log("bieeennn");
       racha++;
-      console.log(racha);
       setFilteredQuestions(questions.filter(question =>
         question.tema == document.getElementById('select').value
       ));
+      setTrueAnswer([
+        {correct: false}, {correct: false}, {correct: false}, {correct: false}
+      ]);
     }
     else {
       alert("Tremendo maloooo");
-      console.log("malll");
       setHidden(true);
     }
   }
 
+  //Hace un mapeo de las preguntas
   const Question = props => {
 
     const { text, tema, answers } = props.question;
 
     return (
-      <div name="Callate Amparo">
+      <div>
         <h2>{text}</h2>
         {answers.map((answer, idx) => (
-          <div key={idx}>
+          <div>
             <label>{answer.text}</label>
-            <input type="radio" name={text} id={idx} onChange={handleChange}/>
+            <input required type="radio" name={text} id={idx} onChange={handleChange}/>
             <br />
           </div>
         ))}
@@ -83,14 +101,15 @@ const Play = props => {
     );
   };
 
+  //Hace un GET a la base de datos y almacena las preguntas
   useEffect(() => {
     axios.get('/question')
       .then(res => {
-       console.log(res.data);
        setQuestions(res.data);
      });
   },[]);
 
+  //Para elegir una pregunta random
   const r = Math.floor(Math.random()*filteredQuestions.length);
 
   return (
@@ -107,7 +126,6 @@ const Play = props => {
         <option>4to 4ta</option>
       </select>
       <input id="jugar" type="button" value="Jugar" onClick={handleClick}/>
-      <div>
         {filteredQuestions.map((question,idx) => {
           if (r === idx){
             console.log(idx);
@@ -123,7 +141,6 @@ const Play = props => {
           }
         }
         )}
-      </div>
     </div>
   );
 }
