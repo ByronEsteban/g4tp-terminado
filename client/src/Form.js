@@ -55,12 +55,13 @@ const Form = props => {
     <form onSubmit={handleSubmit}>
       <select onChange={prueba}>
         <option>Seleccionar Tema</option>
-        <option>Matemática</option>
-        <option>Inglés</option>
-        <option>Historia</option>
         <option>Dragon Ball</option>
-        <option>Fulbo</option>
         <option>Marvel</option>
+        <option>Inglés</option>
+        <option>DC</option>
+        <option>Stranger Things</option>
+        <option>The Walking Dead</option>
+        <option>4to 4ta</option>
       </select>
       <br />
       <br />
