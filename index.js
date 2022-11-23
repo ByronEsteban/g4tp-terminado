@@ -4,7 +4,7 @@ import morgan from 'morgan';
 import router from './Routes/router.js';
 
 const PORT = process.env.PORT || 4000;
-const DB = 'mongodb+srv://evagriodb:Jokerlal10@questions.q6gicwm.mongodb.net/?retryWrites=true&w=majority';
+const DB = procces.env.DB;
 
 const app = express();
 
