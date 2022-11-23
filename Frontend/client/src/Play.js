@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 //Racha, una variable igual a la de Form y un índice para filteredQuestions
 let racha = 0;
@@ -13,6 +13,12 @@ const Play = props => {
   const [filteredQuestions, setFilteredQuestions] = useState([]);
   //Para esconder o mostrar botones
   const [hidden, setHidden] = useState(false);
+
+  const [hiddenForm, setHiddenForm] = useState(true);
+
+  const changeHiddenForm = () => {
+    setHiddenForm(prev => !prev)
+  }
   const [trueAnswer, setTrueAnswer] = useState([
     {correct: false}, {correct: false}, {correct: false}, {correct: false}]);
 
@@ -74,8 +80,6 @@ const Play = props => {
     }
     if (win) {
       question_index++;
-      if (question_index == filteredQuestions.length)
-        question_index = 0;
       alert("Biennn!!! No sos tan bruto");
       racha++;
       setFilteredQuestions(questions.filter(question =>
@@ -121,9 +125,18 @@ const Play = props => {
   },[]);
 
   return (
-    <div>
+    <div className="text-center">
+  <div hidden={!hiddenForm}>
+  <br/>
+  <br/>
+  <button className="btn btn-warning" onClick={changeHiddenForm}>Jugar</button>
+  <br/>
+  <br/>
+  <br/>
+  </div>
+    <div hidden={ hiddenForm }>
       <br />
-      <select id="select" onChange={e => {document.getElementById('jugar').disabled = false}}>
+      <select className="selectem text-center" id="select" onChange={e => {document.getElementById('jugar').disabled = false}}>
         <option>Seleccionar Tema</option>
         <option>Dragon Ball</option>
         <option>Marvel</option>
@@ -133,7 +146,7 @@ const Play = props => {
         <option>The Walking Dead</option>
         <option>4to 4ta</option>
       </select>
-      <input id="jugar" type="button" value="Jugar" onClick={handleClick}/>
+      <input className="btn btn-warning" id="jugar" type="button" value="Jugar" onClick={handleClick}/>
         {filteredQuestions.map((question,idx) => {
           if (question_index === idx){
             console.log(idx);
@@ -149,6 +162,7 @@ const Play = props => {
           }
         }
         )}
+      </div>
     </div>
   );
 }
