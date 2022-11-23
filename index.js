@@ -4,7 +4,7 @@ import morgan from 'morgan';
 import router from './Routes/router.js';
 
 const PORT = process.env.PORT || 4000;
-const DB = process.env.DB;
+const DB = process.env.DB || 'mongodb://127.0.0.1/test';
 
 const app = express();
 
